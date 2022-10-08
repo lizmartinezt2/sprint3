@@ -1,0 +1,21 @@
+
+<table class="table table-striped table-hover table-bordered">
+    <tr>
+        <th>asunto</th>
+        <th>Mensaje</th>
+        <th>Fecha / hora</th>
+        <th>Destinatario</th>   
+    </tr>
+
+    {%for c in listaCorreos%}
+    <tr>
+        <td>{{c["asunto"]}}</td>
+        <td>{{c["mensaje"]}}</td>
+        <td>{{c["fecha"]}} / {{c["hora"]}}</td>
+        <td>{{c["nombreusuario"]}}</td>  
+    </tr>
+
+    {%endfor%}
+    
+<table>
+    
